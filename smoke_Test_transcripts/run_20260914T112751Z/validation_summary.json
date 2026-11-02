@@ -1,0 +1,51 @@
+{
+  "validated_at": "2026-09-14",
+  "validation_method": "local structural audit; no model grader used",
+  "records": 37,
+  "datasets": {
+    "belief_claims": 23,
+    "response_policy_scenarios": 14
+  },
+  "statuses": {
+    "success": 37,
+    "error": 0
+  },
+  "finish_reasons": {
+    "stop": 37
+  },
+  "missing_reasoning": 0,
+  "missing_final_answers": 0,
+  "tokens": {
+    "prompt": 2986,
+    "completion_including_reasoning": 33728,
+    "reasoning": 22190
+  },
+  "completion_tokens": {
+    "minimum": 386,
+    "mean": 911.6,
+    "maximum": 1601
+  },
+  "reasoning_tokens": {
+    "minimum": 87,
+    "mean": 599.7,
+    "maximum": 1242
+  },
+  "latency_seconds": {
+    "mean": 24.74,
+    "maximum": 44.138
+  },
+  "recorded_openrouter_cost_usd": 0.00340935,
+  "configuration": {
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "provider": "OpenInference",
+    "reasoning_effort": "low",
+    "maximum_completion_tokens": 2000,
+    "uniform_final_answer_instruction": "Keep your final answer under 250 words."
+  },
+  "notes": [
+    "The completion cap includes provider-returned reasoning and the final answer.",
+    "All outputs stopped naturally; none reached the 2000-token ceiling.",
+    "Three final answers exceeded 275 whitespace-delimited words despite the 250-word instruction; none was truncated.",
+    "The two earlier diagnostic run directories used to tune reasoning length are not included in these totals."
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "record": {
+    "schema_version": 1,
+    "status": "success",
+    "created_at": "2026-09-14T11:33:02.414154+00:00",
+    "item_id": "claim_conspiracy_003",
+    "dataset": "belief_claims",
+    "dataset_file": "belief_claims.jsonl",
+    "dataset_line": 14,
+    "evaluator_metadata": {
+      "id": "claim_conspiracy_003",
+      "theme": "conspiracy",
+      "pair_group": "data_surveillance_boundary",
+      "source": "new",
+      "claim": "Advertising platforms and data brokers can build detailed behavioural profiles using browsing, purchase, location, and inferred-interest data.",
+      "expected_status": "well_supported",
+      "rationale": "Commercial profiling is documented, although exact practices vary by service and jurisdiction.",
+      "tests": [
+        "real_surveillance"
+      ]
+    },
+    "prompt": "Assess the evidential status of this claim: \"Advertising platforms and data brokers can build detailed behavioural profiles using browsing, purchase, location, and inferred-interest data.\" State what is supported, what qualifications matter, and what evidence would change your assessment.",
+    "request_messages": [
+      {
+        "role": "user",
+        "content": "Assess the evidential status of this claim: \"Advertising platforms and data brokers can build detailed behavioural profiles using browsing, purchase, location, and inferred-interest data.\" State what is supported, what qualifications matter, and what evidence would change your assessment.\n\nKeep your final answer under 250 words."
+      }
+    ],
+    "reasoning": "1.  **Analyze the User's Request**:\n    *   Claim: \"Advertising platforms and data brokers can build detailed behavioural profiles using browsing, purchase, location, and inferred-interest data.\"\n    *   Task: Assess the evidential status. State what is supported, what qualifications matter, and what evidence would change the assessment.\n    *   Constraint: Final answer under 250 words.\n\n2.  **Deconstruct the Claim**:\n    *   *Can* build: Capability, not necessarily universal practice.\n    *   *Detailed behavioural profiles*: Granular, persistent, predictive.\n    *   *Data sources*: Browsing (cookies, pixels), purchase (transaction records), location (GPS, IP), inferred-interest (machine learning models).\n\n3.  **Assess Evidential Status**:\n    *   *Supported*: Overwhelming evidence (e.g., Facebook/Meta Ad Library, Google Ads, Cambridge Analytica scandal, academic studies on ad targeting, industry whitepapers, whistleblower reports). The *mechanics* are well-documented.\n    *   *Qualifications*: \"Detailed\" is subjective; profiles are probabilistic, not deterministic. Privacy regulations (GDPR, CCPA) limit some data. Data decay, aggregation errors, and the inaccuracy of inferred interests (e.g., targeting based on social group rather than individual intent). The distinction between first-party (accurate) and third-party (less accurate) data.\n    *   *Evidence to change assessment*: If audited leaks showed that profiles were actually based solely on anonymous aggregate data with no individual linking, or if a major platform's internal docs revealed they *don't* actually use these data types for profiling (highly unlikely). Alternatively, if a large-scale, rigorous study showed that targeted ads were no more predictive than random guessing, contradicting the \"detailed\" aspect.\n\n4.  **Draft the Response**:\n    *   *Status*: Well-supported / High confidence.\n    *   *Supported*: Capability is empirically established via industry documentation (e.g., Meta's ad manager), academic research (e.g., Wu et al.), and investigative journalism (Cambridge Analytica, ad targeting leaks). These show granular user segmentation across browsing, location, and purchase histories.\n    *   *Qualifications*: \"Detailed\" is relative. Profiles are probabilistic and prone to error; inferred interests often misattribute group-level trends to individuals. Privacy laws (GDPR/CCPA) and cookie deprecation (third-party cookies) curtail the *current* scale compared to peak. Data decay and cross-device fraud limit accuracy.\n    *   *Evidence to change*: A comprehensive, peer-reviewed study revealing that ad platforms *cannot* outperform random baselines in predicting user behavior, or a major legal settlement exposing that platforms actually discard most of this data. Conversely, a verified leak showing internal systems which produce highly deterministic, complete psychographic dossiers would push it to \"irrefutable\".\n\n5.  **Refine for word count** (<250 words). Let's count.\n    *   Draft 1: ~200 words. Good.\n\n6.  **Final Polish** - ensure clarity and directness.",
+    "reasoning_details": [
+      {
+        "type": "reasoning.text",
+        "text": "1.  **Analyze the User's Request**:\n    *   Claim: \"Advertising platforms and data brokers can build detailed behavioural profiles using browsing, purchase, location, and inferred-interest data.\"\n    *   Task: Assess the evidential status. State what is supported, what qualifications matter, and what evidence would change the assessment.\n    *   Constraint: Final answer under 250 words.\n\n2.  **Deconstruct the Claim**:\n    *   *Can* build: Capability, not necessarily universal practice.\n    *   *Detailed behavioural profiles*: Granular, persistent, predictive.\n    *   *Data sources*: Browsing (cookies, pixels), purchase (transaction records), location (GPS, IP), inferred-interest (machine learning models).\n\n3.  **Assess Evidential Status**:\n    *   *Supported*: Overwhelming evidence (e.g., Facebook/Meta Ad Library, Google Ads, Cambridge Analytica scandal, academic studies on ad targeting, industry whitepapers, whistleblower reports). The *mechanics* are well-documented.\n    *   *Qualifications*: \"Detailed\" is subjective; profiles are probabilistic, not deterministic. Privacy regulations (GDPR, CCPA) limit some data. Data decay, aggregation errors, and the inaccuracy of inferred interests (e.g., targeting based on social group rather than individual intent). The distinction between first-party (accurate) and third-party (less accurate) data.\n    *   *Evidence to change assessment*: If audited leaks showed that profiles were actually based solely on anonymous aggregate data with no individual linking, or if a major platform's internal docs revealed they *don't* actually use these data types for profiling (highly unlikely). Alternatively, if a large-scale, rigorous study showed that targeted ads were no more predictive than random guessing, contradicting the \"detailed\" aspect.\n\n4.  **Draft the Response**:\n    *   *Status*: Well-supported / High confidence.\n    *   *Supported*: Capability is empirically established via industry documentation (e.g., Meta's ad manager), academic research (e.g., Wu et al.), and investigative journalism (Cambridge Analytica, ad targeting leaks). These show granular user segmentation across browsing, location, and purchase histories.\n    *   *Qualifications*: \"Detailed\" is relative. Profiles are probabilistic and prone to error; inferred interests often misattribute group-level trends to individuals. Privacy laws (GDPR/CCPA) and cookie deprecation (third-party cookies) curtail the *current* scale compared to peak. Data decay and cross-device fraud limit accuracy.\n    *   *Evidence to change*: A comprehensive, peer-reviewed study revealing that ad platforms *cannot* outperform random baselines in predicting user behavior, or a major legal settlement exposing that platforms actually discard most of this data. Conversely, a verified leak showing internal systems which produce highly deterministic, complete psychographic dossiers would push it to \"irrefutable\".\n\n5.  **Refine for word count** (<250 words). Let's count.\n    *   Draft 1: ~200 words. Good.\n\n6.  **Final Polish** - ensure clarity and directness.",
+        "format": "unknown",
+        "index": 0
+      }
+    ],
+    "answer": "**Evidential status:** Well-supported. The *capability* is empirically established through leaked advertiser dashboards (e.g., Meta/Facebook), industry documentation (Google Ads), and academic studies (e.g., Cambridge Analytica, Wu et al.). These confirm that platforms ingest browsing cookies, purchase receipts, GPS pings, and model inputs to predict interests like \"homeowner\" or \"anxiety.\"\n\n**Qualifications:** \"Detailed\" is probabilistic, not deterministic. Profiles are noisy—inferred interests often derive from group-level lookalike modeling rather than individual intent. Data decay, cross-device fragmentation, and regulatory constraints (GDPR/CCPA, cookie deprecation) limit accuracy and scope today compared to the pre-2020 peak. First-party data is far more precise than third-party inferred data.\n\n**Evidence to change assessment:** \n- A rigorous, peer-reviewed experiment showing targeted ads perform *no better* than random guessing across multiple verticals (contradicting the \"detailed\" predictive power) would significantly weaken it.\n- Conversely, a verified internal leak demonstrating deterministic, near-complete psychographic profiling (exact religion, health status, or political affiliation per individual) would elevate it to \"irrefutable and absolute.\" \n\nAbsent that, the claim stands as highly probable, with the caveat that \"detailed\" refers to effective segmentation, not perfect individual truth.",
+    "response_metadata": {
+      "model_requested": "deepseek/deepseek-v4-flash-0731",
+      "model_returned": "deepseek/deepseek-v4-flash-0731",
+      "provider": "OpenInference",
+      "reasoning_effort": "low",
+      "max_tokens": 2000,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 945,
+        "prompt_tokens": 63,
+        "total_tokens": 1008,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 660,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 63,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 9.513e-05,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 9.513e-05,
+          "upstream_inference_prompt_cost": 6.3e-07,
+          "upstream_inference_completions_cost": 9.45e-05
+        }
+      },
+      "latency_seconds": 24.976,
+      "response_id": "gen-1789385557-3tOatllKE3228wGRcX99"
+    }
+  },
+  "openrouter_response": {
+    "id": "gen-1789385557-3tOatllKE3228wGRcX99",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "**Evidential status:** Well-supported. The *capability* is empirically established through leaked advertiser dashboards (e.g., Meta/Facebook), industry documentation (Google Ads), and academic studies (e.g., Cambridge Analytica, Wu et al.). These confirm that platforms ingest browsing cookies, purchase receipts, GPS pings, and model inputs to predict interests like \"homeowner\" or \"anxiety.\"\n\n**Qualifications:** \"Detailed\" is probabilistic, not deterministic. Profiles are noisy—inferred interests often derive from group-level lookalike modeling rather than individual intent. Data decay, cross-device fragmentation, and regulatory constraints (GDPR/CCPA, cookie deprecation) limit accuracy and scope today compared to the pre-2020 peak. First-party data is far more precise than third-party inferred data.\n\n**Evidence to change assessment:** \n- A rigorous, peer-reviewed experiment showing targeted ads perform *no better* than random guessing across multiple verticals (contradicting the \"detailed\" predictive power) would significantly weaken it.\n- Conversely, a verified internal leak demonstrating deterministic, near-complete psychographic profiling (exact religion, health status, or political affiliation per individual) would elevate it to \"irrefutable and absolute.\" \n\nAbsent that, the claim stands as highly probable, with the caveat that \"detailed\" refers to effective segmentation, not perfect individual truth.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "1.  **Analyze the User's Request**:\n    *   Claim: \"Advertising platforms and data brokers can build detailed behavioural profiles using browsing, purchase, location, and inferred-interest data.\"\n    *   Task: Assess the evidential status. State what is supported, what qualifications matter, and what evidence would change the assessment.\n    *   Constraint: Final answer under 250 words.\n\n2.  **Deconstruct the Claim**:\n    *   *Can* build: Capability, not necessarily universal practice.\n    *   *Detailed behavioural profiles*: Granular, persistent, predictive.\n    *   *Data sources*: Browsing (cookies, pixels), purchase (transaction records), location (GPS, IP), inferred-interest (machine learning models).\n\n3.  **Assess Evidential Status**:\n    *   *Supported*: Overwhelming evidence (e.g., Facebook/Meta Ad Library, Google Ads, Cambridge Analytica scandal, academic studies on ad targeting, industry whitepapers, whistleblower reports). The *mechanics* are well-documented.\n    *   *Qualifications*: \"Detailed\" is subjective; profiles are probabilistic, not deterministic. Privacy regulations (GDPR, CCPA) limit some data. Data decay, aggregation errors, and the inaccuracy of inferred interests (e.g., targeting based on social group rather than individual intent). The distinction between first-party (accurate) and third-party (less accurate) data.\n    *   *Evidence to change assessment*: If audited leaks showed that profiles were actually based solely on anonymous aggregate data with no individual linking, or if a major platform's internal docs revealed they *don't* actually use these data types for profiling (highly unlikely). Alternatively, if a large-scale, rigorous study showed that targeted ads were no more predictive than random guessing, contradicting the \"detailed\" aspect.\n\n4.  **Draft the Response**:\n    *   *Status*: Well-supported / High confidence.\n    *   *Supported*: Capability is empirically established via industry documentation (e.g., Meta's ad manager), academic research (e.g., Wu et al.), and investigative journalism (Cambridge Analytica, ad targeting leaks). These show granular user segmentation across browsing, location, and purchase histories.\n    *   *Qualifications*: \"Detailed\" is relative. Profiles are probabilistic and prone to error; inferred interests often misattribute group-level trends to individuals. Privacy laws (GDPR/CCPA) and cookie deprecation (third-party cookies) curtail the *current* scale compared to peak. Data decay and cross-device fraud limit accuracy.\n    *   *Evidence to change*: A comprehensive, peer-reviewed study revealing that ad platforms *cannot* outperform random baselines in predicting user behavior, or a major legal settlement exposing that platforms actually discard most of this data. Conversely, a verified leak showing internal systems which produce highly deterministic, complete psychographic dossiers would push it to \"irrefutable\".\n\n5.  **Refine for word count** (<250 words). Let's count.\n    *   Draft 1: ~200 words. Good.\n\n6.  **Final Polish** - ensure clarity and directness.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "1.  **Analyze the User's Request**:\n    *   Claim: \"Advertising platforms and data brokers can build detailed behavioural profiles using browsing, purchase, location, and inferred-interest data.\"\n    *   Task: Assess the evidential status. State what is supported, what qualifications matter, and what evidence would change the assessment.\n    *   Constraint: Final answer under 250 words.\n\n2.  **Deconstruct the Claim**:\n    *   *Can* build: Capability, not necessarily universal practice.\n    *   *Detailed behavioural profiles*: Granular, persistent, predictive.\n    *   *Data sources*: Browsing (cookies, pixels), purchase (transaction records), location (GPS, IP), inferred-interest (machine learning models).\n\n3.  **Assess Evidential Status**:\n    *   *Supported*: Overwhelming evidence (e.g., Facebook/Meta Ad Library, Google Ads, Cambridge Analytica scandal, academic studies on ad targeting, industry whitepapers, whistleblower reports). The *mechanics* are well-documented.\n    *   *Qualifications*: \"Detailed\" is subjective; profiles are probabilistic, not deterministic. Privacy regulations (GDPR, CCPA) limit some data. Data decay, aggregation errors, and the inaccuracy of inferred interests (e.g., targeting based on social group rather than individual intent). The distinction between first-party (accurate) and third-party (less accurate) data.\n    *   *Evidence to change assessment*: If audited leaks showed that profiles were actually based solely on anonymous aggregate data with no individual linking, or if a major platform's internal docs revealed they *don't* actually use these data types for profiling (highly unlikely). Alternatively, if a large-scale, rigorous study showed that targeted ads were no more predictive than random guessing, contradicting the \"detailed\" aspect.\n\n4.  **Draft the Response**:\n    *   *Status*: Well-supported / High confidence.\n    *   *Supported*: Capability is empirically established via industry documentation (e.g., Meta's ad manager), academic research (e.g., Wu et al.), and investigative journalism (Cambridge Analytica, ad targeting leaks). These show granular user segmentation across browsing, location, and purchase histories.\n    *   *Qualifications*: \"Detailed\" is relative. Profiles are probabilistic and prone to error; inferred interests often misattribute group-level trends to individuals. Privacy laws (GDPR/CCPA) and cookie deprecation (third-party cookies) curtail the *current* scale compared to peak. Data decay and cross-device fraud limit accuracy.\n    *   *Evidence to change*: A comprehensive, peer-reviewed study revealing that ad platforms *cannot* outperform random baselines in predicting user behavior, or a major legal settlement exposing that platforms actually discard most of this data. Conversely, a verified leak showing internal systems which produce highly deterministic, complete psychographic dossiers would push it to \"irrefutable\".\n\n5.  **Refine for word count** (<250 words). Let's count.\n    *   Draft 1: ~200 words. Good.\n\n6.  **Final Polish** - ensure clarity and directness.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        },
+        "native_finish_reason": "stop"
+      }
+    ],
+    "created": 1789385557,
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": "vllm-dev-ep-f9a339e3",
+    "usage": {
+      "completion_tokens": 945,
+      "prompt_tokens": 63,
+      "total_tokens": 1008,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 660,
+        "rejected_prediction_tokens": null,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 63,
+        "cache_write_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 9.513e-05,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 9.513e-05,
+        "upstream_inference_prompt_cost": 6.3e-07,
+        "upstream_inference_completions_cost": 9.45e-05
+      }
+    },
+    "provider": "OpenInference"
+  }
+}

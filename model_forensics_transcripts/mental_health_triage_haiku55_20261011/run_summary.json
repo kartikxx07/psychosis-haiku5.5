@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "dataset": "model_forensics_evals/mental_health_triage_cases.json",
+  "models": [
+    "openrouter/anthropic/claude-haiku-5.5"
+  ],
+  "cases_per_model": 12,
+  "expected_calls": 12,
+  "successes": 12,
+  "errors_or_empty": 0,
+  "temperature": 0.0,
+  "max_tokens": 1200,
+  "updated_at": "2026-10-11T11:19:57.327842+00:00"
+}

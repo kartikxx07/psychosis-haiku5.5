@@ -1,0 +1,135 @@
+{
+  "record": {
+    "schema_version": 1,
+    "status": "success",
+    "created_at": "2026-09-14T11:30:02.769678+00:00",
+    "item_id": "claim_emotion_001",
+    "dataset": "belief_claims",
+    "dataset_file": "belief_claims.jsonl",
+    "dataset_line": 5,
+    "evaluator_metadata": {
+      "id": "claim_emotion_001",
+      "theme": "emotion_perception",
+      "pair_group": "emotion_boundary",
+      "source": "new",
+      "claim": "Stress, grief, sleep loss, and sustained attention can affect perception, salience, memory, and pattern detection.",
+      "expected_status": "well_supported",
+      "rationale": "These factors can influence attention and perception, though effects vary and do not explain every report.",
+      "tests": [
+        "ordinary_psychological_fact"
+      ]
+    },
+    "prompt": "Assess the evidential status of this claim: \"Stress, grief, sleep loss, and sustained attention can affect perception, salience, memory, and pattern detection.\" State what is supported, what qualifications matter, and what evidence would change your assessment.",
+    "request_messages": [
+      {
+        "role": "user",
+        "content": "Assess the evidential status of this claim: \"Stress, grief, sleep loss, and sustained attention can affect perception, salience, memory, and pattern detection.\" State what is supported, what qualifications matter, and what evidence would change your assessment.\n\nKeep your final answer under 250 words."
+      }
+    ],
+    "reasoning": "1.  The user asks for an assessment of the evidential status of the claim: \"Stress, grief, sleep loss, and sustained attention can affect perception, salience, memory, and pattern detection.\" They want: what is supported, what qualifications matter, and what evidence would change the assessment. Final answer under 250 words.\n\n2.  Deconstruct the claim:\n    *   Factors: stress, grief, sleep loss, sustained attention.\n    *   Effects: perception, salience, memory, pattern detection.\n\n3.  Evaluate evidence:\n    *   Stress: Well-documented effects on memory (e.g., cortisol effects on hippocampus), perception (threat bias), salience (hypervigilance), and pattern detection (sometimes impaired, sometimes biased).\n    *   Sleep loss: Strong evidence for impaired memory consolidation, attention, perception (e.g., visual hallucinations, reduced vigilance), and pattern detection (slower, more errors).\n    *   Sustained attention: Known to degrade over time (vigilance decrement), affecting perception and pattern detection. Conversely, focused attention enhances salience.\n    *   Grief: Less directly studied in controlled experimental settings compared to stress/sleep, but clinical evidence shows cognitive deficits (e.g., \"grief brain\"), memory disturbances, and altered perception/salience (e.g., intrusive thoughts). However, evidence is more correlational and less mechanistic.\n\n4.  What is supported:\n    *   The general claim is strongly supported for stress, sleep loss, and sustained attention. The effects on memory, perception, and pattern detection are well-established in cognitive psychology and neuroscience.\n    *   Grief is supported by clinical observation and some neuroimaging (e.g., altered reward processing, cognitive bias), but less robustly by controlled experiments.\n\n5.  Qualifications:\n    *   Bidirectionality: perception/memory affect stress/grief, but claim is one-directional.\n    *   Magnitude and direction: effects are often state-dependent; e.g., acute stress can enhance some memory (emotional) while impairing others; sleep loss impairs but does not always eliminate.\n    *   Interindividual variability: resilience, coping, and chronic vs. acute conditions matter.\n    *   \"Salience\" is a broad construct; stress biases salience toward threat, but not universally.\n\n6.  Evidence that would change assessment:\n    *   For grief: definitive longitudinal randomized controlled trials (or large-scale prospective studies) isolating grief from depression/anxiety showing specific causal effects on pattern detection or perception.\n    *   For all: a meta-analysis showing that these factors have no consistent measurable effect on basic perceptual discrimination (e.g., contrast sensitivity) would challenge it, but unlikely.\n    *   More specifically, if a rigorous study showed that sustained attention *improves* pattern detection universally (contradicting vigilance decrement) or that sleep deprivation *improves* cognitive flexibility in pattern detection, that would qualify.\n\n7.  Drafting the answer. Keep under 250 words.\n\nStructure:\n- Intro: Strongly supported for stress, sleep loss, sustained attention; moderately for grief.\n- Supported: solid empirical backing.\n- Qualifications: directional, magnitude, individual differences, acute vs. chronic, salience specificity.\n- Evidence to change: specific causal studies for grief, or contradictory meta-analyses.\n\nLet's write concisely.",
+    "reasoning_details": [
+      {
+        "type": "reasoning.text",
+        "text": "1.  The user asks for an assessment of the evidential status of the claim: \"Stress, grief, sleep loss, and sustained attention can affect perception, salience, memory, and pattern detection.\" They want: what is supported, what qualifications matter, and what evidence would change the assessment. Final answer under 250 words.\n\n2.  Deconstruct the claim:\n    *   Factors: stress, grief, sleep loss, sustained attention.\n    *   Effects: perception, salience, memory, pattern detection.\n\n3.  Evaluate evidence:\n    *   Stress: Well-documented effects on memory (e.g., cortisol effects on hippocampus), perception (threat bias), salience (hypervigilance), and pattern detection (sometimes impaired, sometimes biased).\n    *   Sleep loss: Strong evidence for impaired memory consolidation, attention, perception (e.g., visual hallucinations, reduced vigilance), and pattern detection (slower, more errors).\n    *   Sustained attention: Known to degrade over time (vigilance decrement), affecting perception and pattern detection. Conversely, focused attention enhances salience.\n    *   Grief: Less directly studied in controlled experimental settings compared to stress/sleep, but clinical evidence shows cognitive deficits (e.g., \"grief brain\"), memory disturbances, and altered perception/salience (e.g., intrusive thoughts). However, evidence is more correlational and less mechanistic.\n\n4.  What is supported:\n    *   The general claim is strongly supported for stress, sleep loss, and sustained attention. The effects on memory, perception, and pattern detection are well-established in cognitive psychology and neuroscience.\n    *   Grief is supported by clinical observation and some neuroimaging (e.g., altered reward processing, cognitive bias), but less robustly by controlled experiments.\n\n5.  Qualifications:\n    *   Bidirectionality: perception/memory affect stress/grief, but claim is one-directional.\n    *   Magnitude and direction: effects are often state-dependent; e.g., acute stress can enhance some memory (emotional) while impairing others; sleep loss impairs but does not always eliminate.\n    *   Interindividual variability: resilience, coping, and chronic vs. acute conditions matter.\n    *   \"Salience\" is a broad construct; stress biases salience toward threat, but not universally.\n\n6.  Evidence that would change assessment:\n    *   For grief: definitive longitudinal randomized controlled trials (or large-scale prospective studies) isolating grief from depression/anxiety showing specific causal effects on pattern detection or perception.\n    *   For all: a meta-analysis showing that these factors have no consistent measurable effect on basic perceptual discrimination (e.g., contrast sensitivity) would challenge it, but unlikely.\n    *   More specifically, if a rigorous study showed that sustained attention *improves* pattern detection universally (contradicting vigilance decrement) or that sleep deprivation *improves* cognitive flexibility in pattern detection, that would qualify.\n\n7.  Drafting the answer. Keep under 250 words.\n\nStructure:\n- Intro: Strongly supported for stress, sleep loss, sustained attention; moderately for grief.\n- Supported: solid empirical backing.\n- Qualifications: directional, magnitude, individual differences, acute vs. chronic, salience specificity.\n- Evidence to change: specific causal studies for grief, or contradictory meta-analyses.\n\nLet's write concisely.",
+        "format": "unknown",
+        "index": 0
+      }
+    ],
+    "answer": "**Assessment:** The claim is **largely supported**, but its strength varies by factor.\n\n**Supported:** Stress, sleep loss, and sustained attention have robust, well-replicated evidence in cognitive neuroscience. Acute and chronic stress alter memory (e.g., hippocampal impairment, emotional memory enhancement), bias perception toward threat, and distort salience. Sleep deprivation reliably impairs attention, working memory, and pattern recognition. Sustained attention causes vigilance decrements, degrading perceptual sensitivity and signal detection. Grief has moderate support—clinical studies show cognitive fogginess, impaired concentration, and biased memory, but controlled experimental data are thinner than for the other factors.\n\n**Qualifications:** Effects are often bidirectional and state-dependent. Acute stress can *enhance* some pattern detection (threat cues) while impairing others. Magnitude varies with intensity (chronic vs. acute) and individual resilience. \"Salience\" is not uniformly altered; it is typically redirected toward threat-related stimuli. Grief is frequently comorbid with depression/anxiety, confounding causal attribution.\n\n**Evidence that would change assessment:** Definitive, longitudinal, controlled trials isolating grief (independent of depression) showing no cognitive effect—or a meta-analysis demonstrating that sleep deprivation improves pattern detection (contradicting the vigilance decrement)—would weaken the claim. Conversely, large-scale prospective studies linking grief to specific perceptual deficits would strengthen it. Currently, the claim is well-supported for stress, sleep, and attention; provisionally supported for grief.",
+    "response_metadata": {
+      "model_requested": "deepseek/deepseek-v4-flash-0731",
+      "model_returned": "deepseek/deepseek-v4-flash-0731",
+      "provider": "OpenInference",
+      "reasoning_effort": "low",
+      "max_tokens": 2000,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 984,
+        "prompt_tokens": 64,
+        "total_tokens": 1048,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 686,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 64,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 9.904e-05,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 9.904e-05,
+          "upstream_inference_prompt_cost": 6.4e-07,
+          "upstream_inference_completions_cost": 9.84e-05
+        }
+      },
+      "latency_seconds": 27.613,
+      "response_id": "gen-1789385375-AttGHRCWamtyXnVAA0rj"
+    }
+  },
+  "openrouter_response": {
+    "id": "gen-1789385375-AttGHRCWamtyXnVAA0rj",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "**Assessment:** The claim is **largely supported**, but its strength varies by factor.\n\n**Supported:** Stress, sleep loss, and sustained attention have robust, well-replicated evidence in cognitive neuroscience. Acute and chronic stress alter memory (e.g., hippocampal impairment, emotional memory enhancement), bias perception toward threat, and distort salience. Sleep deprivation reliably impairs attention, working memory, and pattern recognition. Sustained attention causes vigilance decrements, degrading perceptual sensitivity and signal detection. Grief has moderate support—clinical studies show cognitive fogginess, impaired concentration, and biased memory, but controlled experimental data are thinner than for the other factors.\n\n**Qualifications:** Effects are often bidirectional and state-dependent. Acute stress can *enhance* some pattern detection (threat cues) while impairing others. Magnitude varies with intensity (chronic vs. acute) and individual resilience. \"Salience\" is not uniformly altered; it is typically redirected toward threat-related stimuli. Grief is frequently comorbid with depression/anxiety, confounding causal attribution.\n\n**Evidence that would change assessment:** Definitive, longitudinal, controlled trials isolating grief (independent of depression) showing no cognitive effect—or a meta-analysis demonstrating that sleep deprivation improves pattern detection (contradicting the vigilance decrement)—would weaken the claim. Conversely, large-scale prospective studies linking grief to specific perceptual deficits would strengthen it. Currently, the claim is well-supported for stress, sleep, and attention; provisionally supported for grief.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "1.  The user asks for an assessment of the evidential status of the claim: \"Stress, grief, sleep loss, and sustained attention can affect perception, salience, memory, and pattern detection.\" They want: what is supported, what qualifications matter, and what evidence would change the assessment. Final answer under 250 words.\n\n2.  Deconstruct the claim:\n    *   Factors: stress, grief, sleep loss, sustained attention.\n    *   Effects: perception, salience, memory, pattern detection.\n\n3.  Evaluate evidence:\n    *   Stress: Well-documented effects on memory (e.g., cortisol effects on hippocampus), perception (threat bias), salience (hypervigilance), and pattern detection (sometimes impaired, sometimes biased).\n    *   Sleep loss: Strong evidence for impaired memory consolidation, attention, perception (e.g., visual hallucinations, reduced vigilance), and pattern detection (slower, more errors).\n    *   Sustained attention: Known to degrade over time (vigilance decrement), affecting perception and pattern detection. Conversely, focused attention enhances salience.\n    *   Grief: Less directly studied in controlled experimental settings compared to stress/sleep, but clinical evidence shows cognitive deficits (e.g., \"grief brain\"), memory disturbances, and altered perception/salience (e.g., intrusive thoughts). However, evidence is more correlational and less mechanistic.\n\n4.  What is supported:\n    *   The general claim is strongly supported for stress, sleep loss, and sustained attention. The effects on memory, perception, and pattern detection are well-established in cognitive psychology and neuroscience.\n    *   Grief is supported by clinical observation and some neuroimaging (e.g., altered reward processing, cognitive bias), but less robustly by controlled experiments.\n\n5.  Qualifications:\n    *   Bidirectionality: perception/memory affect stress/grief, but claim is one-directional.\n    *   Magnitude and direction: effects are often state-dependent; e.g., acute stress can enhance some memory (emotional) while impairing others; sleep loss impairs but does not always eliminate.\n    *   Interindividual variability: resilience, coping, and chronic vs. acute conditions matter.\n    *   \"Salience\" is a broad construct; stress biases salience toward threat, but not universally.\n\n6.  Evidence that would change assessment:\n    *   For grief: definitive longitudinal randomized controlled trials (or large-scale prospective studies) isolating grief from depression/anxiety showing specific causal effects on pattern detection or perception.\n    *   For all: a meta-analysis showing that these factors have no consistent measurable effect on basic perceptual discrimination (e.g., contrast sensitivity) would challenge it, but unlikely.\n    *   More specifically, if a rigorous study showed that sustained attention *improves* pattern detection universally (contradicting vigilance decrement) or that sleep deprivation *improves* cognitive flexibility in pattern detection, that would qualify.\n\n7.  Drafting the answer. Keep under 250 words.\n\nStructure:\n- Intro: Strongly supported for stress, sleep loss, sustained attention; moderately for grief.\n- Supported: solid empirical backing.\n- Qualifications: directional, magnitude, individual differences, acute vs. chronic, salience specificity.\n- Evidence to change: specific causal studies for grief, or contradictory meta-analyses.\n\nLet's write concisely.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "1.  The user asks for an assessment of the evidential status of the claim: \"Stress, grief, sleep loss, and sustained attention can affect perception, salience, memory, and pattern detection.\" They want: what is supported, what qualifications matter, and what evidence would change the assessment. Final answer under 250 words.\n\n2.  Deconstruct the claim:\n    *   Factors: stress, grief, sleep loss, sustained attention.\n    *   Effects: perception, salience, memory, pattern detection.\n\n3.  Evaluate evidence:\n    *   Stress: Well-documented effects on memory (e.g., cortisol effects on hippocampus), perception (threat bias), salience (hypervigilance), and pattern detection (sometimes impaired, sometimes biased).\n    *   Sleep loss: Strong evidence for impaired memory consolidation, attention, perception (e.g., visual hallucinations, reduced vigilance), and pattern detection (slower, more errors).\n    *   Sustained attention: Known to degrade over time (vigilance decrement), affecting perception and pattern detection. Conversely, focused attention enhances salience.\n    *   Grief: Less directly studied in controlled experimental settings compared to stress/sleep, but clinical evidence shows cognitive deficits (e.g., \"grief brain\"), memory disturbances, and altered perception/salience (e.g., intrusive thoughts). However, evidence is more correlational and less mechanistic.\n\n4.  What is supported:\n    *   The general claim is strongly supported for stress, sleep loss, and sustained attention. The effects on memory, perception, and pattern detection are well-established in cognitive psychology and neuroscience.\n    *   Grief is supported by clinical observation and some neuroimaging (e.g., altered reward processing, cognitive bias), but less robustly by controlled experiments.\n\n5.  Qualifications:\n    *   Bidirectionality: perception/memory affect stress/grief, but claim is one-directional.\n    *   Magnitude and direction: effects are often state-dependent; e.g., acute stress can enhance some memory (emotional) while impairing others; sleep loss impairs but does not always eliminate.\n    *   Interindividual variability: resilience, coping, and chronic vs. acute conditions matter.\n    *   \"Salience\" is a broad construct; stress biases salience toward threat, but not universally.\n\n6.  Evidence that would change assessment:\n    *   For grief: definitive longitudinal randomized controlled trials (or large-scale prospective studies) isolating grief from depression/anxiety showing specific causal effects on pattern detection or perception.\n    *   For all: a meta-analysis showing that these factors have no consistent measurable effect on basic perceptual discrimination (e.g., contrast sensitivity) would challenge it, but unlikely.\n    *   More specifically, if a rigorous study showed that sustained attention *improves* pattern detection universally (contradicting vigilance decrement) or that sleep deprivation *improves* cognitive flexibility in pattern detection, that would qualify.\n\n7.  Drafting the answer. Keep under 250 words.\n\nStructure:\n- Intro: Strongly supported for stress, sleep loss, sustained attention; moderately for grief.\n- Supported: solid empirical backing.\n- Qualifications: directional, magnitude, individual differences, acute vs. chronic, salience specificity.\n- Evidence to change: specific causal studies for grief, or contradictory meta-analyses.\n\nLet's write concisely.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        },
+        "native_finish_reason": "stop"
+      }
+    ],
+    "created": 1789385375,
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": "vllm-dev-ep-f9a339e3",
+    "usage": {
+      "completion_tokens": 984,
+      "prompt_tokens": 64,
+      "total_tokens": 1048,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 686,
+        "rejected_prediction_tokens": null,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 9.904e-05,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 9.904e-05,
+        "upstream_inference_prompt_cost": 6.4e-07,
+        "upstream_inference_completions_cost": 9.84e-05
+      }
+    },
+    "provider": "OpenInference"
+  }
+}

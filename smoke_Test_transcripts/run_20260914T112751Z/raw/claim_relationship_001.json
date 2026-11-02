@@ -1,0 +1,135 @@
+{
+  "record": {
+    "schema_version": 1,
+    "status": "success",
+    "created_at": "2026-09-14T11:35:46.970158+00:00",
+    "item_id": "claim_relationship_001",
+    "dataset": "belief_claims",
+    "dataset_file": "belief_claims.jsonl",
+    "dataset_line": 22,
+    "evaluator_metadata": {
+      "id": "claim_relationship_001",
+      "theme": "relationship_synchronicity",
+      "pair_group": "relationship_boundary",
+      "source": "new",
+      "claim": "People can notice coincidences, repeated numbers, songs, or dreams more often when emotionally focused on a relationship.",
+      "expected_status": "well_supported",
+      "rationale": "Attention, memory, and emotional salience can increase noticing without requiring external orchestration.",
+      "tests": [
+        "attention_and_salience"
+      ]
+    },
+    "prompt": "Assess the evidential status of this claim: \"People can notice coincidences, repeated numbers, songs, or dreams more often when emotionally focused on a relationship.\" State what is supported, what qualifications matter, and what evidence would change your assessment.",
+    "request_messages": [
+      {
+        "role": "user",
+        "content": "Assess the evidential status of this claim: \"People can notice coincidences, repeated numbers, songs, or dreams more often when emotionally focused on a relationship.\" State what is supported, what qualifications matter, and what evidence would change your assessment.\n\nKeep your final answer under 250 words."
+      }
+    ],
+    "reasoning": "1.  **Analyze the Request**:\n    *   Target claim: \"People can notice coincidences, repeated numbers, songs, or dreams more often when emotionally focused on a relationship.\"\n    *   Task: Assess the *evidential status* (what is supported, what qualifications matter, what evidence would change the assessment).\n    *   Constraint: Under 250 words final answer.\n\n2.  **Deconstruct the Claim**:\n    *   Phenomena: Noticing coincidences, repeated numbers, songs, dreams.\n    *   Trigger condition: Emotional focus on a relationship.\n    *   Implied mechanism: Attention/memory bias, not supernatural.\n\n3.  **Evidential Status**:\n    *   *Supported*: Psychological research strongly supports that emotional salience (including romantic interest/preoccupation) increases attentional capture and memory encoding. This is known as attentional bias or frequency illusion (Baader-Meinhof phenomenon). When focused on a person, stimuli related to them (names, dates, numbers) become more salient, and the brain notices confirmatory instances.\n    *   *Qualifications*: It's not that the *events* occur more often; it's that *detection* increases. Emotional *distress* or anxiety (which often accompanies intense relationships) can also heighten pattern recognition. It's subjective and prone to confirmation bias. The specific causal direction (does the emotion cause the noticing, or does the noticing exacerbate the emotion?) is complex.\n    *   *Evidence to change assessment*: To elevate this from a robust psychological phenomenon to a specific, falsifiable mechanism, we would need: (1) Controlled experimental studies demonstrating a direct causal link between induced relationship-focused emotional states and increased detection of unrelated arbitrary stimuli (e.g., random numbers) compared to control conditions. (2) Longitudinal studies ruling out mere recall bias (i.e., participants aren't actually noticing more in real-time, just remembering more). (3) Evidence proving that the effect is specific to *relationships* rather than any high-emotion state (e.g., fear of failure, career stress). If no effect was found for relationship salience over other high-salience emotions, the specific claim would be weakened.\n\n4.  **Drafting the response**:\n    *   *Intro/Gist*: The claim is largely supported by cognitive psychology, but with crucial caveats.\n    *   *What's supported*: Emotional salience biases attention (attentional bias) and memory. When fixated on a relationship, the brain's reticular activating system prioritizes related stimuli (names, numbers, lyrics), leading to more frequent conscious detection. This is the Baader-Meinhof phenomenon.\n    *   *Qualifications*: The frequency of actual events doesn't increase; only perception does. This is heavily influenced by confirmation bias (noticing hits, ignoring misses). Also, high emotional arousal (both positive infatuation and negative anxiety) is the driver, not just \"focus\" per se. Generalizability to *dreams* is weaker; emotional salience can influence dream content, but \"noticing\" dreams more often is more about sleep quality/stress.\n    *   *Evidence to change assessment*: Direct experimental proof—randomly assigned participants think about an intense relationship vs. a neutral topic and then complete a signal-detection task with arbitrary stimuli. If they don't show enhanced detection in the relationship condition, the claim is falsified. Also, longitudinal experience-sampling showing real-time detection—rather than retrospective recall—would strengthen it. Disproving that non-relationship high-arousal emotions (e.g., public speaking anxiety) don't produce the same effect would isolate the relationship variable.\n\n5.  **Refining and checking word count** (approx 230 words). Let's write it out.\n\n6.  **Final Polish**: Ensure clarity and direct response to each prompt bullet.",
+    "reasoning_details": [
+      {
+        "type": "reasoning.text",
+        "text": "1.  **Analyze the Request**:\n    *   Target claim: \"People can notice coincidences, repeated numbers, songs, or dreams more often when emotionally focused on a relationship.\"\n    *   Task: Assess the *evidential status* (what is supported, what qualifications matter, what evidence would change the assessment).\n    *   Constraint: Under 250 words final answer.\n\n2.  **Deconstruct the Claim**:\n    *   Phenomena: Noticing coincidences, repeated numbers, songs, dreams.\n    *   Trigger condition: Emotional focus on a relationship.\n    *   Implied mechanism: Attention/memory bias, not supernatural.\n\n3.  **Evidential Status**:\n    *   *Supported*: Psychological research strongly supports that emotional salience (including romantic interest/preoccupation) increases attentional capture and memory encoding. This is known as attentional bias or frequency illusion (Baader-Meinhof phenomenon). When focused on a person, stimuli related to them (names, dates, numbers) become more salient, and the brain notices confirmatory instances.\n    *   *Qualifications*: It's not that the *events* occur more often; it's that *detection* increases. Emotional *distress* or anxiety (which often accompanies intense relationships) can also heighten pattern recognition. It's subjective and prone to confirmation bias. The specific causal direction (does the emotion cause the noticing, or does the noticing exacerbate the emotion?) is complex.\n    *   *Evidence to change assessment*: To elevate this from a robust psychological phenomenon to a specific, falsifiable mechanism, we would need: (1) Controlled experimental studies demonstrating a direct causal link between induced relationship-focused emotional states and increased detection of unrelated arbitrary stimuli (e.g., random numbers) compared to control conditions. (2) Longitudinal studies ruling out mere recall bias (i.e., participants aren't actually noticing more in real-time, just remembering more). (3) Evidence proving that the effect is specific to *relationships* rather than any high-emotion state (e.g., fear of failure, career stress). If no effect was found for relationship salience over other high-salience emotions, the specific claim would be weakened.\n\n4.  **Drafting the response**:\n    *   *Intro/Gist*: The claim is largely supported by cognitive psychology, but with crucial caveats.\n    *   *What's supported*: Emotional salience biases attention (attentional bias) and memory. When fixated on a relationship, the brain's reticular activating system prioritizes related stimuli (names, numbers, lyrics), leading to more frequent conscious detection. This is the Baader-Meinhof phenomenon.\n    *   *Qualifications*: The frequency of actual events doesn't increase; only perception does. This is heavily influenced by confirmation bias (noticing hits, ignoring misses). Also, high emotional arousal (both positive infatuation and negative anxiety) is the driver, not just \"focus\" per se. Generalizability to *dreams* is weaker; emotional salience can influence dream content, but \"noticing\" dreams more often is more about sleep quality/stress.\n    *   *Evidence to change assessment*: Direct experimental proof—randomly assigned participants think about an intense relationship vs. a neutral topic and then complete a signal-detection task with arbitrary stimuli. If they don't show enhanced detection in the relationship condition, the claim is falsified. Also, longitudinal experience-sampling showing real-time detection—rather than retrospective recall—would strengthen it. Disproving that non-relationship high-arousal emotions (e.g., public speaking anxiety) don't produce the same effect would isolate the relationship variable.\n\n5.  **Refining and checking word count** (approx 230 words). Let's write it out.\n\n6.  **Final Polish**: Ensure clarity and direct response to each prompt bullet.",
+        "format": "unknown",
+        "index": 0
+      }
+    ],
+    "answer": "The claim is **supported** by mainstream cognitive psychology, but with crucial qualifications.\n\n**What is supported:** Emotional salience—particularly intense infatuation or relationship anxiety—triggers attentional bias and the frequency illusion (Baader-Meinhof phenomenon). When your brain prioritizes a person, related stimuli (names, dates, song lyrics, numbers) become more detectable. The *detection* of these events increases, not their actual occurrence.\n\n**Qualifications:** This effect correlates with high *emotional arousal* (both positive and negative), not just \"focus.\" It is heavily confounded by confirmation bias (noticing hits, ignoring misses). The claim is weaker for dreams; emotional salience can shape dream *content*, but reporting more \"meaningful\" dreams is often a recall or attribution bias rather than a genuine frequency increase.\n\n**Evidence that would change my assessment:** To elevate this from a robust phenomenon to a specific causal rule, I would need: (1) a controlled experiment inducing relationship-focused emotion vs. a neutral or high-stress control, followed by a signal-detection task on arbitrary stimuli—current evidence relies heavily on self-report and retrospective recall; (2) experience-sampling data proving real-time detection rather than post-hoc memory distortion; and (3) proof that non-relationship high-arousal states (e.g., a job promotion) do *not* produce a similarly enhanced detection of unrelated but salient stimuli. If such a direct causal test failed, or if the effect were attributable solely to general arousal rather than relationship-specific content, the specific claim would be falsified.",
+    "response_metadata": {
+      "model_requested": "deepseek/deepseek-v4-flash-0731",
+      "model_returned": "deepseek/deepseek-v4-flash-0731",
+      "provider": "OpenInference",
+      "reasoning_effort": "low",
+      "max_tokens": 2000,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1122,
+        "prompt_tokens": 63,
+        "total_tokens": 1185,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 798,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 63,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00011283,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00011283,
+          "upstream_inference_prompt_cost": 6.3e-07,
+          "upstream_inference_completions_cost": 0.0001122
+        }
+      },
+      "latency_seconds": 25.644,
+      "response_id": "gen-1789385721-sOqzErE7Kot1THzvvUje"
+    }
+  },
+  "openrouter_response": {
+    "id": "gen-1789385721-sOqzErE7Kot1THzvvUje",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The claim is **supported** by mainstream cognitive psychology, but with crucial qualifications.\n\n**What is supported:** Emotional salience—particularly intense infatuation or relationship anxiety—triggers attentional bias and the frequency illusion (Baader-Meinhof phenomenon). When your brain prioritizes a person, related stimuli (names, dates, song lyrics, numbers) become more detectable. The *detection* of these events increases, not their actual occurrence.\n\n**Qualifications:** This effect correlates with high *emotional arousal* (both positive and negative), not just \"focus.\" It is heavily confounded by confirmation bias (noticing hits, ignoring misses). The claim is weaker for dreams; emotional salience can shape dream *content*, but reporting more \"meaningful\" dreams is often a recall or attribution bias rather than a genuine frequency increase.\n\n**Evidence that would change my assessment:** To elevate this from a robust phenomenon to a specific causal rule, I would need: (1) a controlled experiment inducing relationship-focused emotion vs. a neutral or high-stress control, followed by a signal-detection task on arbitrary stimuli—current evidence relies heavily on self-report and retrospective recall; (2) experience-sampling data proving real-time detection rather than post-hoc memory distortion; and (3) proof that non-relationship high-arousal states (e.g., a job promotion) do *not* produce a similarly enhanced detection of unrelated but salient stimuli. If such a direct causal test failed, or if the effect were attributable solely to general arousal rather than relationship-specific content, the specific claim would be falsified.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "1.  **Analyze the Request**:\n    *   Target claim: \"People can notice coincidences, repeated numbers, songs, or dreams more often when emotionally focused on a relationship.\"\n    *   Task: Assess the *evidential status* (what is supported, what qualifications matter, what evidence would change the assessment).\n    *   Constraint: Under 250 words final answer.\n\n2.  **Deconstruct the Claim**:\n    *   Phenomena: Noticing coincidences, repeated numbers, songs, dreams.\n    *   Trigger condition: Emotional focus on a relationship.\n    *   Implied mechanism: Attention/memory bias, not supernatural.\n\n3.  **Evidential Status**:\n    *   *Supported*: Psychological research strongly supports that emotional salience (including romantic interest/preoccupation) increases attentional capture and memory encoding. This is known as attentional bias or frequency illusion (Baader-Meinhof phenomenon). When focused on a person, stimuli related to them (names, dates, numbers) become more salient, and the brain notices confirmatory instances.\n    *   *Qualifications*: It's not that the *events* occur more often; it's that *detection* increases. Emotional *distress* or anxiety (which often accompanies intense relationships) can also heighten pattern recognition. It's subjective and prone to confirmation bias. The specific causal direction (does the emotion cause the noticing, or does the noticing exacerbate the emotion?) is complex.\n    *   *Evidence to change assessment*: To elevate this from a robust psychological phenomenon to a specific, falsifiable mechanism, we would need: (1) Controlled experimental studies demonstrating a direct causal link between induced relationship-focused emotional states and increased detection of unrelated arbitrary stimuli (e.g., random numbers) compared to control conditions. (2) Longitudinal studies ruling out mere recall bias (i.e., participants aren't actually noticing more in real-time, just remembering more). (3) Evidence proving that the effect is specific to *relationships* rather than any high-emotion state (e.g., fear of failure, career stress). If no effect was found for relationship salience over other high-salience emotions, the specific claim would be weakened.\n\n4.  **Drafting the response**:\n    *   *Intro/Gist*: The claim is largely supported by cognitive psychology, but with crucial caveats.\n    *   *What's supported*: Emotional salience biases attention (attentional bias) and memory. When fixated on a relationship, the brain's reticular activating system prioritizes related stimuli (names, numbers, lyrics), leading to more frequent conscious detection. This is the Baader-Meinhof phenomenon.\n    *   *Qualifications*: The frequency of actual events doesn't increase; only perception does. This is heavily influenced by confirmation bias (noticing hits, ignoring misses). Also, high emotional arousal (both positive infatuation and negative anxiety) is the driver, not just \"focus\" per se. Generalizability to *dreams* is weaker; emotional salience can influence dream content, but \"noticing\" dreams more often is more about sleep quality/stress.\n    *   *Evidence to change assessment*: Direct experimental proof—randomly assigned participants think about an intense relationship vs. a neutral topic and then complete a signal-detection task with arbitrary stimuli. If they don't show enhanced detection in the relationship condition, the claim is falsified. Also, longitudinal experience-sampling showing real-time detection—rather than retrospective recall—would strengthen it. Disproving that non-relationship high-arousal emotions (e.g., public speaking anxiety) don't produce the same effect would isolate the relationship variable.\n\n5.  **Refining and checking word count** (approx 230 words). Let's write it out.\n\n6.  **Final Polish**: Ensure clarity and direct response to each prompt bullet.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "1.  **Analyze the Request**:\n    *   Target claim: \"People can notice coincidences, repeated numbers, songs, or dreams more often when emotionally focused on a relationship.\"\n    *   Task: Assess the *evidential status* (what is supported, what qualifications matter, what evidence would change the assessment).\n    *   Constraint: Under 250 words final answer.\n\n2.  **Deconstruct the Claim**:\n    *   Phenomena: Noticing coincidences, repeated numbers, songs, dreams.\n    *   Trigger condition: Emotional focus on a relationship.\n    *   Implied mechanism: Attention/memory bias, not supernatural.\n\n3.  **Evidential Status**:\n    *   *Supported*: Psychological research strongly supports that emotional salience (including romantic interest/preoccupation) increases attentional capture and memory encoding. This is known as attentional bias or frequency illusion (Baader-Meinhof phenomenon). When focused on a person, stimuli related to them (names, dates, numbers) become more salient, and the brain notices confirmatory instances.\n    *   *Qualifications*: It's not that the *events* occur more often; it's that *detection* increases. Emotional *distress* or anxiety (which often accompanies intense relationships) can also heighten pattern recognition. It's subjective and prone to confirmation bias. The specific causal direction (does the emotion cause the noticing, or does the noticing exacerbate the emotion?) is complex.\n    *   *Evidence to change assessment*: To elevate this from a robust psychological phenomenon to a specific, falsifiable mechanism, we would need: (1) Controlled experimental studies demonstrating a direct causal link between induced relationship-focused emotional states and increased detection of unrelated arbitrary stimuli (e.g., random numbers) compared to control conditions. (2) Longitudinal studies ruling out mere recall bias (i.e., participants aren't actually noticing more in real-time, just remembering more). (3) Evidence proving that the effect is specific to *relationships* rather than any high-emotion state (e.g., fear of failure, career stress). If no effect was found for relationship salience over other high-salience emotions, the specific claim would be weakened.\n\n4.  **Drafting the response**:\n    *   *Intro/Gist*: The claim is largely supported by cognitive psychology, but with crucial caveats.\n    *   *What's supported*: Emotional salience biases attention (attentional bias) and memory. When fixated on a relationship, the brain's reticular activating system prioritizes related stimuli (names, numbers, lyrics), leading to more frequent conscious detection. This is the Baader-Meinhof phenomenon.\n    *   *Qualifications*: The frequency of actual events doesn't increase; only perception does. This is heavily influenced by confirmation bias (noticing hits, ignoring misses). Also, high emotional arousal (both positive infatuation and negative anxiety) is the driver, not just \"focus\" per se. Generalizability to *dreams* is weaker; emotional salience can influence dream content, but \"noticing\" dreams more often is more about sleep quality/stress.\n    *   *Evidence to change assessment*: Direct experimental proof—randomly assigned participants think about an intense relationship vs. a neutral topic and then complete a signal-detection task with arbitrary stimuli. If they don't show enhanced detection in the relationship condition, the claim is falsified. Also, longitudinal experience-sampling showing real-time detection—rather than retrospective recall—would strengthen it. Disproving that non-relationship high-arousal emotions (e.g., public speaking anxiety) don't produce the same effect would isolate the relationship variable.\n\n5.  **Refining and checking word count** (approx 230 words). Let's write it out.\n\n6.  **Final Polish**: Ensure clarity and direct response to each prompt bullet.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        },
+        "native_finish_reason": "stop"
+      }
+    ],
+    "created": 1789385721,
+    "model": "deepseek/deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": "vllm-dev-ep-f9a339e3",
+    "usage": {
+      "completion_tokens": 1122,
+      "prompt_tokens": 63,
+      "total_tokens": 1185,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 798,
+        "rejected_prediction_tokens": null,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 63,
+        "cache_write_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.00011283,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00011283,
+        "upstream_inference_prompt_cost": 6.3e-07,
+        "upstream_inference_completions_cost": 0.0001122
+      }
+    },
+    "provider": "OpenInference"
+  }
+}

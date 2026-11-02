@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "models": [
+    "openrouter/anthropic/claude-haiku-5.5"
+  ],
+  "compiled_items_per_model": 272,
+  "expected_conversations": 272,
+  "expected_assistant_calls": 2312,
+  "completed_conversations": 272,
+  "calls_accounted_for": 1122,
+  "errors": 0,
+  "updated_at": "2026-10-14T19:10:13.290711+00:00"
+}

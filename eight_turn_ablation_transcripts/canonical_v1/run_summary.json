@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "models": [
+    "openrouter/deepseek/deepseek-v4-flash",
+    "openrouter/anthropic/claude-haiku-4.5"
+  ],
+  "compiled_conditions": 68,
+  "expected_conversations": 136,
+  "expected_turn_calls": 1088,
+  "completed_conversations": 136,
+  "turns_accounted_for": 1088,
+  "errors": 0,
+  "updated_at": "2026-10-03T18:48:59.946285+00:00"
+}

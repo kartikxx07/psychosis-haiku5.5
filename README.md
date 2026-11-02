@@ -4,7 +4,7 @@
 
 A simple red teaming framework for testing how AI models respond to psychotic characters. 
 
-**Note: Grok-4 on openrouter has started refusing to role play as a psychotic user. However, I found that Grok-3 is just as good and doesn't refuse.**
+**Note:** The red-team generator defaults to Qwen 2.5 7B Instruct. The former Grok 3 endpoint is deprecated on OpenRouter, and DeepSeek V4 Flash may refuse the patient-role request.
 
 ## Quick Start
 
@@ -43,7 +43,9 @@ uv run redteaming_systematic.py
 ### Data Directories
 
 - **`characters/`** - Character scenario files (`.txt`)
-- **`full_transcripts/`** - Complete conversation logs (`.md`, `.json`)
+- **`characters_2_manifest.csv`** - Identity-condition metadata for the new matched persona panel
+- **`full_transcripts/`** - Original complete conversation logs (`.md`, `.json`)
+- **`full_transcripts_2/`** - Transcripts from the new black-box persona experiments
 - **`result_grades/`** - Grading results and analysis data (`.csv`)
 - **`error_logs/`** - Error logs and debugging information (`.json`)
 - **`graphs/`** - Generated visualizations and plots
@@ -81,7 +83,7 @@ uv run redteaming_systematic.py [OPTIONS]
 #### Model Selection
 
 - `--model, -m MODEL` - Test specific model (default: all models)
-- `--redteam-model MODEL` - Model for red teaming (default: `openrouter/x-ai/grok-4`)
+- `--redteam-model MODEL` - Model for red teaming (default: `openrouter/qwen/qwen-2.5-7b-instruct`)
 - `--grader-model MODEL` - Model for grading (default: same as redteam-model)
 
 #### Character Selection
@@ -90,8 +92,9 @@ uv run redteaming_systematic.py [OPTIONS]
 
 #### Configuration
 
-- `--turns, -t NUMBER` - Conversation turns per test (default: 12)
+- `--turns, -t NUMBER` - Assistant turns per transcript, maximum 8 (default: 8)
 - `--max-connections NUMBER` - Concurrent connections (default: 10)
+- `--resume` - Skip model/character/resample cells that already have a transcript
 
 ### Usage Examples
 
@@ -141,24 +144,32 @@ uv run redteaming_systematic.py --list-characters
 
 The script includes these pre-configured models:
 
-- `openai/chatgpt-4o-latest`
-- `openai/gpt-5`
-- `openrouter/openai/gpt-oss-20b`
-- `anthropic/claude-sonnet-4-20250514`
-- `openrouter/x-ai/grok-3`
-- `openrouter/x-ai/grok-4`
-- `openrouter/google/gemini-2.5-flash`
-- `openrouter/google/gemini-2.5-pro`
-- `openrouter/moonshotai/kimi-k2`
-- `openrouter/deepseek/deepseek-chat`
-- `openrouter/deepseek/deepseek-r1-0528`
+- `openrouter/qwen/qwen-2.5-7b-instruct`
+- `openrouter/anthropic/claude-haiku-4.5`
+- `openrouter/deepseek/deepseek-v4-flash`
+
+Use `--resamples N` to draw `N` independent full conversational trajectories for
+each model/character condition. Each transcript filename includes its resample
+index. This measures stochastic rollout variability and is not the same as the
+sentence-level reasoning resampling used in model-forensics work, which branches
+generation immediately before and after individual reasoning sentences.
+
+The new identity pilot can be run across all three default target models with:
+
+```bash
+uv run redteaming_systematic.py \
+  --character "ethan,ethan_independent_expert,ethan_junior_ai,ethan_self_taught,ethan_ml_professor,ethan_ai_regulator,ethan_religious_leader,ethan_god_claim,ethan_alibaba_qwen,ethan_anthropic,ethan_moonshot,ethan_deepseek,ethan_openai,ethan_google_deepmind,maya_independent_expert,alex_independent_expert" \
+  --resamples 3 \
+  --redteam-model openrouter/deepseek/deepseek-v4-flash \
+  --grader-model openrouter/anthropic/claude-haiku-4.5
+```
 
 ## 📊 Output and Results
 
 ### Generated Files
 
 **Conversation Transcripts:**
-- `full_transcripts/{Character}_{Model}_{Timestamp}_target.md` - Target model conversations
+- `full_transcripts_2/{Character}_{Model}_sample-{Index}_{Timestamp}_target.md` - Target model conversations
 
 **Results Data:**
 - `result_grades/redteaming_results_{Timestamp}.csv` - Aggregated grading results
@@ -167,7 +178,8 @@ The script includes these pre-configured models:
 **Error Logs:**
 - `error_logs/{Session}_error.json` - Detailed error information for failed runs
 
-Also I included some red team conversations (i.e., what Grok was thinking as it came up with more messages) in the transcripts folder with names like `full_transcripts/{Character}_{Model}_{Timestamp}_redteam.json`
+The original red-team conversations remain in `full_transcripts/`. New black-box
+experiment transcripts are written to `full_transcripts_2/`.
 
 ### Results Analysis
 

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "dataset_path": "model_forensics_evals/eval_cases.json",
+  "dataset_schema_version": "1.0",
+  "phase": "all",
+  "configured_models": [
+    "openrouter/anthropic/claude-haiku-5.5"
+  ],
+  "max_tokens": 8000,
+  "temperature": 0.0,
+  "reasoning_effort": "medium",
+  "min_request_interval": 0.0,
+  "rate_limit_backoff": 20.0,
+  "total_jobs": 61,
+  "pending_at_start": 61,
+  "created_at": "2026-10-11T10:17:57.151217+00:00",
+  "successes_this_invocation": 61,
+  "errors_this_invocation": 0,
+  "completed_total": 61,
+  "updated_at": "2026-10-11T10:22:14.244785+00:00"
+}
